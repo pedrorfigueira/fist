@@ -182,7 +182,7 @@ fist/
     │   ├── ESPRESSO_guiding.fits
     │   └── ESPRESSO_CCF_A.fits
     └── docs/
-        └── FISTsreenshot.png
+        └── FISTscreenshot.png
 
 ```
 
