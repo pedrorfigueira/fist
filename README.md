@@ -1,4 +1,4 @@
-# FITS Inspection Streamlined Tool - `fist`
+# `fist` - FITS Inspection Streamlined Tool
 
 <img src="fist/static/FISTlogo.png" alt="FISTlogo" width="220" align="right">
 
