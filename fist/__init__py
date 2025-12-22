@@ -1,0 +1,14 @@
+# fist/__init__.py
+
+"""
+FIST - FITS Inspection Streamlined Tool
+"""
+
+from importlib.metadata import version
+__version__ = version("fist")
+
+from .fist import main as run
+from .app import build_app
+
+PACKAGE_NAME = "FIST"
+

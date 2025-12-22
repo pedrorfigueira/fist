@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Editor artifacts
+.idea/
+
+# Panel / Bokeh server artifacts
+*.log
+

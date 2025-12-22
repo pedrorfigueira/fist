@@ -1,0 +1,39 @@
+[project]
+name = "fist"
+version = "1.0.0"
+description = "FITS Inspection Streamlined Tool"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["astronomy", "fits", "visualization"]
+requires-python = ">=3.10"
+authors = [
+    { name = "Pedro Figueira", email = "pedro.figueira@iaa.es" }
+]
+
+dependencies = [
+    "numpy>=1.22",
+    "panel>=1.4",
+    "bokeh>=3.2",
+    "scipy>=1.8",
+    "astropy>=5.0",
+    "matplotlib"
+]
+
+# This makes `fist` a shell command after installation
+[project.scripts]
+fist = "fist.fist:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+fist = ["static/*.png", "static/*.fits"]
+
+[project.urls]
+Homepage = "https://github.com/pedrorfigueira/fist"
+Repository = "https://github.com/pedrorfigueira/fist"
+
