@@ -21,7 +21,7 @@ dependencies = [
 
 # This makes `fist` a shell command after installation
 [project.scripts]
-fist = "fist.fist:main"
+fist = "fist.cli:main"
 
 [build-system]
 requires = ["setuptools", "wheel"]

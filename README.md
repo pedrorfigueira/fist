@@ -13,6 +13,10 @@ It can be used as a starting point to develop interactive or automated tools, fo
 
 `fist` runs as a small local web application and requires no installation beyond Python and your standard browser.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/pedrorfigueira/fist/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18024506.svg)](https://doi.org/10.5281/zenodo.18024506)
+[![status](https://joss.theoj.org/papers/f02a0979b8340b20474bdc1e05fd8515/status.svg)](https://joss.theoj.org/papers/f02a0979b8340b20474bdc1e05fd8515)
+
 ---
 
 ## ✨ Features

@@ -48,17 +48,13 @@ def main():
     app = build_app(instrument_name=ins_name, start_folder=args.folder)
 
     # Start the Panel server
-    try:
-        pn.serve(
-            {f"FIST-{ins_name}": app},
-            show=args.show,
-            autoreload=False,
-            port=args.port,
-            title="FIST"
-        )
-    except KeyboardInterrupt:
-        print("\n🚪  Shutting down FIST Viewer… Goodbye, and fight the good fight.\n")
-        sys.exit(0)
+    pn.serve(
+        {f"FIST-{ins_name}": app},
+        show=args.show,
+        autoreload=False,
+        port=args.port,
+        title="FIST"
+    )
 
 if __name__ == "__main__":
     main()
