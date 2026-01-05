@@ -10,7 +10,16 @@ from fist.app import build_app
 
 
 def main():
-    parser = argparse.ArgumentParser(description="FITS Inspection Streamlined Tool")
+    parser = argparse.ArgumentParser(
+        description="FITS Inspection Streamlined Tool",
+        epilog=(
+            "Examples:\n"
+            "  fist --instrument ESPRESSO --folder example (to run the example)\n"
+            "  fist --instrument KPF --folder /path/to/fits\n"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+
     parser.add_argument("--instrument", type=str, default="KPF",
                         help="Instrument name (e.g. KPF)")
     parser.add_argument("--folder", type=str, default=None,
